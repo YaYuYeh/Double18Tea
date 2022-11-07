@@ -8,38 +8,62 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    
+    var menuDrinks = [Drink]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchMenu(tableTitle: "Menu")
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    func fetchMenu(tableTitle:String){
+        if let url = URL(string: "https://api.airtable.com/v0/appvCOeXjzJJF0ooo/Menu"){
+            var request = URLRequest(url: url)
+            request.setValue("Bearer key1DCv9iTMMreHPe", forHTTPHeaderField: "Authorization")
+            
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let data{
+                    let decoder = JSONDecoder()
+                    do{
+                        let menuResponse = try decoder.decode(MenuResponse.self, from: data)
+//                        self.menuDrinks = menuResponse.records
+                        DispatchQueue.main.async {
+//                            tableView.reloadData()
+                        }
+                    }catch{
+                        print("fetchMenuError:\(error)")
+                    }
+                }
+            }.resume()
+        
+            
+        }
+        
+    }
+    
+    
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(MenuTableViewCell.self)", for: indexPath) as! MenuTableViewCell
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        110
+    }
 
     /*
     // Override to support conditional editing of the table view.

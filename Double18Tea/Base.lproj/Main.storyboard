@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="feT-AJ-NwV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3i8-1e-Pw3">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +19,158 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e7T-2J-X7H">
                             <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="50" height="284"/>
+                            <size key="headerReferenceSize" width="50" height="338"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="3Lx-HD-llr">
+                            <rect key="frame" x="0.0" y="-47" width="390" height="844"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皇后雲奶蓋" translatesAutoresizingMaskIntoConstraints="NO" id="vDg-hP-mgP">
+                                    <rect key="frame" x="63" y="116" width="70" height="148"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starProducts" translatesAutoresizingMaskIntoConstraints="NO" id="Cnj-Vg-3fN">
+                                    <rect key="frame" x="0.0" y="11" width="390" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="皇后雲奶蓋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smx-re-v1H">
+                                    <rect key="frame" x="144" y="127" width="102" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黃金比例調製而成綿密順口的奶蓋！微鹹而綿密。內涵柔和果香的大吉嶺紅茶是皇室后妃寵愛！" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1t-5Y-fo4">
+                                    <rect key="frame" x="144" y="153" width="183" height="115"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="aDE-Ec-tem">
+                                    <rect key="frame" x="0.0" y="267" width="390" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="pageIndicatorTintColor" red="0.84705877299999999" green="0.84705877299999999" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="currentPageIndicatorTintColor" systemColor="systemGrayColor"/>
+                                </pageControl>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdu-Hg-IDH">
+                                    <rect key="frame" x="8" y="168" width="35" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="chevron.left.circle.fill" catalog="system"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyH-Ge-dw9">
+                                    <rect key="frame" x="347" y="168" width="35" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="chevron.right.circle.fill" catalog="system"/>
+                                </button>
+                                <view contentMode="scaleToFill" id="PLy-DY-8Lt" userLabel="SeriesView">
+                                    <rect key="frame" x="0.0" y="300" width="390" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Evg-57-bdU">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YqS-Ul-Xku">
+                                                    <rect key="frame" x="0.0" y="0.0" width="748" height="60"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-XS-qBz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="雲，奶蓋" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" red="0.1074570492" green="0.2492856383" blue="0.38443428280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFY-pn-ypv">
+                                                            <rect key="frame" x="114" y="0.0" width="84" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="米魯克" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzA-Y7-qdM">
+                                                            <rect key="frame" x="208" y="0.0" width="64" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="牛乳" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLy-Be-J2z">
+                                                            <rect key="frame" x="282" y="0.0" width="124" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="三花，醇奶" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="727-Ua-Dri">
+                                                            <rect key="frame" x="416" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="茉生燻茶" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4L-Os-HiA">
+                                                            <rect key="frame" x="530" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="茶，特調" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0h-oS-LfI">
+                                                            <rect key="frame" x="644" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="滿分果香" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="YqS-Ul-Xku" firstAttribute="top" secondItem="PuE-f7-v2X" secondAttribute="top" id="2mo-g5-FSm"/>
+                                                <constraint firstItem="YqS-Ul-Xku" firstAttribute="bottom" secondItem="PuE-f7-v2X" secondAttribute="bottom" id="BMo-hY-7hY"/>
+                                                <constraint firstItem="YqS-Ul-Xku" firstAttribute="leading" secondItem="uEX-Bn-JWY" secondAttribute="leading" id="RPc-86-Zge"/>
+                                                <constraint firstItem="YqS-Ul-Xku" firstAttribute="trailing" secondItem="uEX-Bn-JWY" secondAttribute="trailing" id="Vnn-BY-xCy"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="uEX-Bn-JWY"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="PuE-f7-v2X"/>
+                                        </scrollView>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="WQT-fF-JBu"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Evg-57-bdU" firstAttribute="leading" secondItem="PLy-DY-8Lt" secondAttribute="leading" id="CJ3-Zf-uDt"/>
+                                        <constraint firstItem="Evg-57-bdU" firstAttribute="top" secondItem="PLy-DY-8Lt" secondAttribute="top" id="rEB-CO-AAu"/>
+                                        <constraint firstAttribute="trailing" secondItem="Evg-57-bdU" secondAttribute="trailing" id="xMn-VI-Hzs"/>
+                                        <constraint firstAttribute="bottom" secondItem="Evg-57-bdU" secondAttribute="bottom" id="yen-jR-ZWt"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92549026010000002" green="0.92156863209999995" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCollectionViewCell" id="epa-nB-F74" customClass="MenuCollectionViewCell" customModule="Double18Tea" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="284" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="338" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wph-Qu-nqZ">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -46,7 +192,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="mnX-QQ-X2v" customClass="MenuCollectionReusableView" customModule="Double18Tea" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="284"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="338"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>
@@ -56,6 +202,12 @@
                     </collectionView>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M7-c5-WYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="8BN-gA-tII">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="wA1-mB-KhW"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="336.92307692307691" y="-34.123222748815166"/>
         </scene>
@@ -68,7 +220,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="S8Q-zN-JOv">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="361"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="360"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皇后雲奶蓋" translatesAutoresizingMaskIntoConstraints="NO" id="kZM-zv-PrR">
@@ -79,36 +231,6 @@
                                     <rect key="frame" x="0.0" y="11" width="390" height="83"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aks-AM-2g8">
-                                    <rect key="frame" x="11" y="315" width="94" height="35"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="雲，奶蓋" cornerStyle="capsule"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygZ-yM-uBE">
-                                    <rect key="frame" x="113" y="315" width="84" height="35"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="0.71776964859053838" green="0.80692804670919593" blue="0.96906327895257727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="米魯克" cornerStyle="capsule">
-                                        <color key="baseForegroundColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </buttonConfiguration>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-Xn-hlx">
-                                    <rect key="frame" x="210" y="315" width="63" height="35"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="牛乳" cornerStyle="capsule"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-fM-t92">
-                                    <rect key="frame" x="283" y="315" width="111" height="35"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="三花，醇奶" cornerStyle="capsule"/>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="皇后雲奶蓋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWv-np-3KF">
                                     <rect key="frame" x="144" y="127" width="102" height="24"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,12 +265,108 @@
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" backgroundImage="chevron.right.circle.fill" catalog="system"/>
                                 </button>
+                                <view contentMode="scaleToFill" id="kON-Hu-RM7" userLabel="SeriesView">
+                                    <rect key="frame" x="0.0" y="300" width="390" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXm-SO-HVa">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fBF-I5-muh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="748" height="60"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aks-AM-2g8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="雲，奶蓋" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" red="0.1074570492" green="0.2492856383" blue="0.38443428280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygZ-yM-uBE">
+                                                            <rect key="frame" x="114" y="0.0" width="84" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="米魯克" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-Xn-hlx">
+                                                            <rect key="frame" x="208" y="0.0" width="64" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="牛乳" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-fM-t92">
+                                                            <rect key="frame" x="282" y="0.0" width="124" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="三花，醇奶" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-Fd-YSb">
+                                                            <rect key="frame" x="416" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="茉生燻茶" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et4-pq-JbM">
+                                                            <rect key="frame" x="530" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="茶，特調" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-xX-VRg">
+                                                            <rect key="frame" x="644" y="0.0" width="104" height="60"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="滿分果香" cornerStyle="capsule">
+                                                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fBF-I5-muh" firstAttribute="leading" secondItem="FBt-WS-8dU" secondAttribute="leading" id="3Mb-RL-jxk"/>
+                                                <constraint firstItem="fBF-I5-muh" firstAttribute="bottom" secondItem="SYN-yK-0rx" secondAttribute="bottom" id="5Iq-TH-mMU"/>
+                                                <constraint firstItem="fBF-I5-muh" firstAttribute="trailing" secondItem="FBt-WS-8dU" secondAttribute="trailing" id="Iuw-uK-sxe"/>
+                                                <constraint firstItem="fBF-I5-muh" firstAttribute="top" secondItem="SYN-yK-0rx" secondAttribute="top" id="ZhE-YQ-GEq"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="FBt-WS-8dU"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="SYN-yK-0rx"/>
+                                        </scrollView>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="iel-Dh-5AU"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="GXm-SO-HVa" firstAttribute="leading" secondItem="kON-Hu-RM7" secondAttribute="leading" id="2Aj-6X-OPo"/>
+                                        <constraint firstItem="GXm-SO-HVa" firstAttribute="top" secondItem="kON-Hu-RM7" secondAttribute="top" id="H9h-zm-qLj"/>
+                                        <constraint firstAttribute="bottom" secondItem="GXm-SO-HVa" secondAttribute="bottom" id="IMQ-Jx-Ekd"/>
+                                        <constraint firstAttribute="trailing" secondItem="GXm-SO-HVa" secondAttribute="trailing" id="QrF-t0-wBd"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" red="0.92549026010000002" green="0.92156863209999995" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="108" id="yq0-Nj-PWr" customClass="MenuTableViewCell" customModule="Double18Tea" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="411" width="390" height="108"/>
+                                <rect key="frame" x="0.0" y="410" width="390" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yq0-Nj-PWr" id="IHP-1U-hbK">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="108"/>
@@ -200,6 +418,14 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backgroundImageView" destination="gdg-qS-aw6" id="2TB-Kp-BDr"/>
+                                    <outlet property="drinkImageView" destination="de8-Jc-5du" id="1QP-Fr-5bI"/>
+                                    <outlet property="lLabel" destination="aps-hp-419" id="K01-Te-dCf"/>
+                                    <outlet property="largePricelabel" destination="sIJ-E1-K6c" id="BmC-OJ-itS"/>
+                                    <outlet property="mLabel" destination="fUH-Vd-i9g" id="XgC-qo-9QV"/>
+                                    <outlet property="mediumPriceLabel" destination="1fK-oy-8Aa" id="WiQ-ZE-gJR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -209,6 +435,56 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoU-3k-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="FlB-lO-O3C">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皇后雲奶蓋" translatesAutoresizingMaskIntoConstraints="NO" id="N9c-Ya-Ngt">
+                            <rect key="frame" x="63" y="103" width="70" height="148"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="皇后雲奶蓋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4x-wT-Ovv">
+                            <rect key="frame" x="144" y="114" width="102" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黃金比例調製而成綿密順口的奶蓋！微鹹而綿密。內涵柔和果香的大吉嶺紅茶是皇室后妃寵愛！" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ciy-CB-qx3">
+                            <rect key="frame" x="144" y="140" width="183" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-eY-5oo">
+                            <rect key="frame" x="0.0" y="254" width="390" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" red="0.84705877299999999" green="0.84705877299999999" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="currentPageIndicatorTintColor" systemColor="systemGrayColor"/>
+                        </pageControl>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NH-y2-8JP">
+                            <rect key="frame" x="8" y="155" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="chevron.left.circle.fill" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIb-KP-KGd">
+                            <rect key="frame" x="347" y="155" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.1058823466" green="0.25098040700000002" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="chevron.right.circle.fill" catalog="system"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starProducts" translatesAutoresizingMaskIntoConstraints="NO" id="OZr-LW-wpY">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="mFo-m9-8KB"/>
+                    <color key="backgroundColor" red="0.92559355499999996" green="0.92167896029999996" blue="0.90979057549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1050.7692307692307" y="-34.123222748815166"/>
         </scene>
