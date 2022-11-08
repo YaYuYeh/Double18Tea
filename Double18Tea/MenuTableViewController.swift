@@ -10,12 +10,13 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     
     var menuDrinks = [Drink]()
+    var drinksDic = [String: [Drink]]()
+    let series = ["雲，奶蓋", "米魯克", "牛乳", "三花，醇奶", "茉生燻茶", "茶，特調", "滿分果香"]
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchMenu(tableTitle: "Menu")
-
     }
     
     func fetchMenu(tableTitle:String){
@@ -28,41 +29,71 @@ class MenuTableViewController: UITableViewController {
                     let decoder = JSONDecoder()
                     do{
                         let menuResponse = try decoder.decode(MenuResponse.self, from: data)
-//                        self.menuDrinks = menuResponse.records
+                        let records = menuResponse.records
+                        for record in records{
+                            self.menuDrinks.append(record.fields)
+                        }
+                        self.drinksDic = Dictionary(grouping: self.menuDrinks) { drink in
+                            drink.series
+                        }
                         DispatchQueue.main.async {
-//                            tableView.reloadData()
+                            print(self.drinksDic)
+                            self.tableView.reloadData()
                         }
                     }catch{
                         print("fetchMenuError:\(error)")
                     }
                 }
             }.resume()
-        
-            
         }
-        
     }
     
     
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return series.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        let series = series[section]
+        let seriesDrinks = drinksDic[series]
+        return seriesDrinks?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(MenuTableViewCell.self)", for: indexPath) as! MenuTableViewCell
+        let series = series[indexPath.section]
+        let seriesDrinks = drinksDic[series]
+        let drink = seriesDrinks?[indexPath.row]
+        
+        if let url = drink?.drinkImage?.first?.url{
+            AirTable.shared.getImage(url: url) { image in
+                DispatchQueue.main.async {
+                cell.drinkImageView.image = image
+                }
+            }
+        }
+        cell.mediumPriceLabel.text = drink?.priceMedium?.description
+        cell.largePricelabel.text = drink?.priceLarge.description
+        cell.titleLabel.text = drink?.item
 
+        
+        
+            
+        
+        
+        
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         110
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        series[section]
     }
 
     /*

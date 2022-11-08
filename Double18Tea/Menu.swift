@@ -21,6 +21,7 @@ struct Drink:Decodable{
     let priceLarge:Int
     let sugarLevel:String
     let iceLevel:String
+    let isTopping:Bool?
     let mark:String?
     let description:String?
     let series:String
